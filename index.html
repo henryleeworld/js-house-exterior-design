@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8" />
+    <meta property="og:title" content="房子建築外觀設計" />
+    <meta property="og:description" content="什麼樣風格的房屋外觀最時尚？色系以及結構都維持基本簡單，俐落的造型吸引路人的目光之餘，也非常耐看。" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:type" content="website" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/house-exterior-design.css">
+    <title>房子建築外觀設計</title>
+</head>
+<body>
+    <div class="house" id="house" data-rooms="6">
+        <div class="house-wings" data-flip-key="wings">
+            <div class="house-left-wing">
+                <div class="house-window"></div>
+                <div class="house-window"></div>
+                <div class="house-sparkle">
+                    <div class="house-sparkle-dots"></div>
+                </div>
+            </div>
+            <div class="house-right-wing">
+                <div class="house-window"></div>
+                <div class="house-window"></div>
+                <div class="house-sparkle">
+                    <div class="house-sparkle-dots"></div>
+                </div>
+            </div>
+            <div class="house-roof">
+                <div class="house-ledge"></div>
+            </div>
+        </div>
+        <div class="house-front" data-flip-key="front">
+            <div class="house-chimney"></div>
+            <div class="house-facade"></div>
+            <div class="house-window">
+                <div class="house-sparkle">
+                    <div class="house-sparkle-dots"></div>
+                </div>
+            </div>
+            <div class="house-doorway">
+                <div class="house-stairs"></div>
+                <div class="house-door"></div>
+            </div>
+            <div class="house-gable">
+                <div class="house-roof">
+                    <div class="house-ledge"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <label class="house-label" for="range" id="label">房型</label>
+    <input type="range" min="3" max="6" step="1" value="6" id="range">
+    <script src="https://unpkg.com/flipping@1.1.0/dist/flipping.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.5.4/rxjs.umd.min.js" defer></script>
+    <script src="js/house-exterior-design.js" defer></script>
+</body>
+</html>
